@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Movie_Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Montserrat:wght@700&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="Brand_logo">
+        <img src="images/favicon-16x16.png" alt="movie_icon" />
+        <h2>Movies</h2>
+      </div>
+      <div class="search" id="searching">
+        <i class="fa-brands fa-searchengin"></i>
+        <form  id="form">
+          <input type="text" placeholder="search_movies" name="movieName" autocomplete="off"/>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+      <div class="after_search" id="searched"></div>
+    </div>
+    <div class="sidebar">
+      <h4>MENU</h4>
+      <div class="menu" id="home">
+        <i class="fa-sharp fa-solid fa-house"></i>
+        <p>Home</p>
+      </div>
+      <div class="menu" id="discovery">
+        <i class="fa-brands fa-discourse"></i>
+        <p>Discovery</p>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-tty"></i>
+        <p>Community</p>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-arrow-right"></i>
+        <p>Coming soon</p>
+      </div>
+      <hr />
+      <h4>LIBRARY</h4>
+      <div class="menu">
+        <i class="fa-solid fa-registered"></i>
+        <p>Recent</p>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-bookmark"></i>
+        <p>Bookmarked</p>
+      </div>
+      <div class="menu">
+        <i class="fa-brands fa-symfony"></i>
+        <p>Top rated</p>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-download"></i>
+        <p>Downloaded</p>
+      </div>
+      <hr />
+      <div class="menu">
+        <i class="fa-solid fa-gear"></i>
+        <p>Settings</p>
+      </div>
+      <div class="menu">
+        <i class="fa-brands fa-hire-a-helper"></i>
+        <p>Help</p>
+      </div>
+    </div>
+    <div class="movies_list_before_specific_search">
+      <div class="movies_container" id="movie_details_be">  
+        <!-- be=before movie search -->
+      </div>
+      <div class="movies_list_after_specific_search">
+        <div class="movies_container" id="movie_details_af"> 
+          <!-- af= after movie search  -->
+        </div>
+        <div class="movie_one" id="One_movie">
+          <!-- specific movie clicked -->
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
